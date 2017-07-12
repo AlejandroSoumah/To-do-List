@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ContextoTareasBD">
+  <DataContextMoniker Name="/ContextoTareasBDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cfb225cb-ebfb-4e83-b3f8-a55daeec8964" absoluteBounds="0.625, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ContextoTareasBDDataContext/Tareas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb0791a7-d3cd-41a2-98fc-c6fa018d97c0" absoluteBounds="0.64000000000000012, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88001ae6-3a6c-433f-b51a-2477bcd4a95d" absoluteBounds="3.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ContextoTareasBDDataContext/Usuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b8fc3e5-d846-4f51-8a1d-d519aeb7b48b" absoluteBounds="3.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 1.82294840494792); (2.625 : 1.82294840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ContextoTareasBDDataContext/Usuarios/Usuarios_Tareas" />
+      <nodes>
+        <classShapeMoniker Id="88001ae6-3a6c-433f-b51a-2477bcd4a95d" />
+        <classShapeMoniker Id="cfb225cb-ebfb-4e83-b3f8-a55daeec8964" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

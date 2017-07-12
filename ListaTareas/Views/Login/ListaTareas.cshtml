@@ -1,0 +1,42 @@
+﻿@using ListaTareas.Models
+@model IEnumerable<Tareas>
+
+@{
+    ViewBag.Title = "ListaTareas";
+}
+
+
+<style>
+    .ocultar{
+        display:none;
+    }
+</style>
+
+
+<h2>ListaTareas</h2>
+@Html.ActionLink("Crear nueva tarea!", "Create")
+<table class="table">
+    <tr>
+        <th class="ocultar">Id</th>
+        <th>Tarea</th>
+        <th>Descrici&oacute;n</th>
+        <th>Priopridad</th>
+        <th class="ocultar">Id Usuario</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="ocultar">@item.Id_Tarea.ToString()</td>
+        <td>@item.NombreTarea</td>
+        <td>@item.DescripcionTarea</td>
+        <td>@item.PrioridadTarea</td>
+        <td class="ocultar">@item.Fk_Usuario.ToString()</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id_Tarea }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id_Tarea })
+        </td>
+    </tr>
+}
+
+</table>
