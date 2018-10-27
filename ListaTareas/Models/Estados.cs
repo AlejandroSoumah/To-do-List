@@ -7,12 +7,14 @@ namespace ListaTareas.Models
 {
     public class Estados
     {
-        public String Estado { get; set; }
         public int IdEstado { get; set; }
+        public String Estado { get; set; }
 
-        public Estados()
+        public Estados(int id, string name)
         {
+            this.IdEstado = id;
+            this.Estado = name;
         }
-        
+
     }
 }
