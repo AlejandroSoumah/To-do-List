@@ -8,6 +8,7 @@ namespace ListaTareas.Models
     public class Estados
     {
         public int IdEstado { get; set; }
+        
         public String Estado { get; set; }
 
         public Estados(int id, string name)
